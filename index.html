@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mountain Image Parallax</title>
+        
+        <!-- Compiled CSS -->
+        <link rel="stylesheet" href="dist/css/main.min.css">
+    </head>
+    <body>
+
+    <nav class="main-nav">
+        <a href="#" class="nav-logo">
+            <img src="/mountain_bg/logo.svg" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="parallax-container">
+        <h1 class="title" style="display: none;">Mountain Image Parallax</h1>
+        
+        <div class="parallax-scene">
+            <!-- Layer 0: Dark background -->
+            <div class="parallax-layer layer-bg" data-depth="0">
+                <img src="mountain_bg/2x_size/0_dark_bg.png" alt="">
+            </div>
+            
+            <!-- Layer 1: Sky -->
+            <div class="parallax-layer layer-sky" data-depth="0.1">
+                <img src="mountain_bg/2x_size/1_plax_sky.png" alt="">
+            </div>
+            
+            <!-- Layer 2: Clouds -->
+            <div class="parallax-layer layer-clouds" data-depth="0.15">
+                <img src="mountain_bg/2x_size/2_plax_clouds.png" alt="">
+            </div>
+            
+            <!-- Layer 3: Mountains -->
+            <div class="parallax-layer layer-mountains" data-depth="0.2">
+                <img src="mountain_bg/2x_size/3_plax_mountains.png" alt="">
+            </div>
+            
+            <!-- Layer 4: Hills -->
+            <div class="parallax-layer layer-hills" data-depth="0.3">
+                <img src="mountain_bg/2x_size/4_plax_hills.png" alt="">
+            </div>
+            
+            <!-- Layer 5: Canopy back -->
+            <div class="parallax-layer layer-canopy-back" data-depth="0.4">
+                <img src="mountain_bg/2x_size/5_plax_canopy_back.png" alt="">
+            </div>
+            
+            <!-- Layer 6: Small birds -->
+            <div class="parallax-layer birds birds-sm" data-depth="0.35">
+                <img src="mountain_bg/2x_size/6a_plax_birds_sm_down_right.png" alt="">
+            </div>
+            
+            <!-- Layer 7: Canopy middle back -->
+            <div class="parallax-layer layer-canopy-mid-back" data-depth="0.5">
+                <img src="mountain_bg/2x_size/7_plax_canopy_middle_back.png" alt="">
+            </div>
+            
+            <!-- Layer 8: Large birds -->
+            <div class="parallax-layer birds birds-lg" data-depth="0.45">
+                <img src="mountain_bg/2x_size/8a_plax_birds_lg_down_right.png" alt="">
+            </div>
+            
+            <!-- Layer 9: Canopy middle front -->
+            <div class="parallax-layer layer-canopy-mid-front" data-depth="0.6">
+                <img src="mountain_bg/2x_size/9_plax_canopy_middle_front.png" alt="">
+            </div>
+            
+            <!-- Layer 10: Canopy front -->
+            <div class="parallax-layer layer-canopy-front" data-depth="0.8">
+                <img src="mountain_bg/2x_size/10_plax_canopy_front.png" alt="">
+            </div>
+            
+            <!-- Glass window overlay -->
+            <div class="glass-window-overlay"></div>
+        </div>
+    </main>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="portfolio-content">
+            <h2>Portfolio</h2>
+            <p>Scroll down to see more content...</p>
+        </div>
+    </section>
+
+        <!-- GSAP Core -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        
+        <!-- GSAP ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        
+        <!-- Compiled JS -->
+        <script src="dist/js/main.min.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,28 @@
+// Modules
+@use 'homepageAnimation';
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$dark-color: #2c3e50;
+$light-color: #ecf0f1;
+
+// Reset & Base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: $dark-color;
+    background-color: $light-color;
+}
+
+

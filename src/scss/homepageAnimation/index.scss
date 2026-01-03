@@ -1,0 +1,225 @@
+// Mountain Parallax Styles
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1a1a2e;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 100;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.parallax-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+// Default: all layers with images at bottom
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Background & Sky layers - full coverage
+.layer-bg,
+.layer-sky {
+    img {
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+// Clouds layer
+.layer-clouds {
+    img {
+        // Adjust as needed
+    }
+}
+
+// Mountains layer - positioned at bottom
+.layer-mountains {
+    img {
+        transform: translate(0px, 60%);
+    }
+}
+
+.layer-hills {
+    img {
+        transform: translate(0px, 56%);
+    }
+}
+
+.layer-canopy-back {
+    img {
+        transform: translate(0px, 55%);
+    }
+}
+
+.layer-canopy-mid-back {
+    img {
+        transform: translate(0px, 60%);
+    }
+}
+.layer-canopy-mid-front {
+    img {
+        transform: translate(0px, 62%);
+    }
+}
+
+.layer-canopy-front {
+    img {
+        transform: translate(0px, 51%);
+    }
+}
+
+// Hills layer
+.layer-hills {
+    img {
+        // Adjust as needed
+    }
+}
+
+// Tree/canopy layers
+.layer-canopy-back,
+.layer-canopy-mid-back,
+.layer-canopy-mid-front,
+.layer-canopy-front {
+    img {
+        // Adjust as needed
+    }
+}
+
+// Birds positioning - in the sky area
+.birds {
+    img {
+        bottom: auto;
+        top: 30%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        max-width: 150px;
+        transform: translateX(-50%);
+    }
+}
+
+.birds-sm img {
+    top: 0;
+    left: 62%;
+    transform: translate(-50%, 55vh);
+}
+
+.birds-lg img {
+    top: 0;
+    left: 35%;
+    transform: translate(-50%, 56vh);
+}
+
+// Glass window overlay
+.glass-window-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(247, 238, 243, 0.9), rgba(124, 193, 205, 0.9));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Navigation
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: opacity 0.3s ease;
+            
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.portfolio {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #1a1a2e;
+    z-index: 10;
+    
+    .portfolio-content {
+        text-align: center;
+        color: #fff;
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+    }
+}
