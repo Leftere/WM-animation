@@ -138,27 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // const birdsSm = document.querySelector('.birds-sm');
     // const birdsLg = document.querySelector('.birds-lg');
     
-    if (birdsSm) {
-        gsap.to(birdsSm, {
-            y: '-=20',
-            x: '+=30',
-            duration: 4,
-            repeat: -1,
-            yoyo: true,
-            ease: 'sine.inOut'
-        });
-    }
-    
-    if (birdsLg) {
-        gsap.to(birdsLg, {
-            y: '-=15',
-            x: '+=25',
-            duration: 5,
-            repeat: -1,
-            yoyo: true,
-            ease: 'sine.inOut'
-        });
-    }
+ 
     
     // Initial entrance animation
     gsap.from(layers, {
